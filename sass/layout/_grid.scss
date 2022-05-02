@@ -12,6 +12,15 @@
   }
 }
 
+.column-wrapper {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  & > div:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}
+
 .row {
   max-width: $grid-width;
   background-color: #eee;
