@@ -39,6 +39,8 @@
     &::after {
       background-color: $color-white;
     }
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+
   }
 
   &--green {

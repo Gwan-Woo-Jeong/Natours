@@ -3,11 +3,21 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(tab-port) {
+    display: block;
+    max-width: 50rem;
+  }
+
   & > div {
     flex: 1;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
     }
   }
 }
