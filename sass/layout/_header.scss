@@ -18,7 +18,7 @@
 
   /* resolution higher than 192dpi 
     at the same time min-width of 37.5em or 125em would be applied */
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     // for safari (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 125em) {
     background-image: linear-gradient(
@@ -29,7 +29,7 @@
       url(../img/hero.jpg);
   }
 
-  @media (min-width: 2000px) {
+  @media only screen and (min-width: 2000px) {
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
